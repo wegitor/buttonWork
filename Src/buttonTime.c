@@ -5,7 +5,7 @@
 #define LOW 0
 #define false 0
 
-const static unsigned long debounceTime = 60;
+const static unsigned long debounceTime = 50;
 const static int rising = 1;
 const static int falling = -1;
 
