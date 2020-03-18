@@ -94,7 +94,10 @@ int main(void)
   MX_USART3_UART_Init();
 
   /* USER CODE BEGIN 2 */
+
+  //create buffer for feature string operations
   char buf[255];
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -104,14 +107,20 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
+	  //condition when button pressed
 	  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)==1){
-	  		  int secondsRez = readByDebounce(GPIOA, GPIO_PIN_0);
-	  		  if(secondsRez>=1){
-	  			  itoa(secondsRez,buf,10);
-	  			  HAL_UART_Transmit(&huart3, buf,strlen(buf), 100);
-	  			  HAL_UART_Transmit(&huart3, "sec\n",4, 100);
-	  		  }
-	  	  }
+		  //save result of button hold time
+		  int secondsRez = readByDebounce(GPIOA, GPIO_PIN_0);
+		  if(secondsRez>1){
+			  //Convert int number to string by saving to buffer
+			  itoa(secondsRez,buf,10);
+
+			  //transmit converted number via uart
+			  HAL_UART_Transmit(&huart3, buf,strlen(buf), 100);
+			  //send unit of number with line switch
+			  HAL_UART_Transmit(&huart3, "sec\n",4, 100);
+		  }
+	  }
   }
   /* USER CODE END 3 */
 
