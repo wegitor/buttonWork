@@ -13,7 +13,7 @@ This project counts seconds of button holding. Project is designed for stm32f407
 3. [ST-LINK utility](https://www.st.com/en/development-tools/stsw-link004.html)
 4. Drivers for your ttl converter (usb to uart)
 
-## Building
+## Building and Compiling
 1. Open System workbench and import downloaded project into your workspace.
 2. Connect MCU to computer via ST-LINK port. If you use discovery check jumpers that are located in the board, it should be shorted. 
 3. Go in menu to menu -> project -> Build project

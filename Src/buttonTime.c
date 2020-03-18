@@ -5,7 +5,7 @@
 #define LOW 0
 #define false 0
 
-const static unsigned long debounceTime = 50;
+const static unsigned long debounceTime = 10;
 const static int rising = 1;
 const static int falling = -1;
 
@@ -34,16 +34,34 @@ int readByDebounce(GPIO_TypeDef * gpioX, int pin){
 			if (stateChange == falling){
 				//when bounce time expired button consider released
 				if (HAL_GetTick() - prevBounceTime > debounceTime) {
+
 					pressed=true;
+
+					int continuePress=0;
+
 					//fix end time for calculate holding duration
 					endTime=HAL_GetTick();
-					break;
+					//release button bounce loop
+					while(HAL_GetTick() - endTime < debounceTime){
+						if(HAL_GPIO_ReadPin(gpioX, pin)){
+							continuePress=1;
+							state = HIGH;
+							// read the button's state
+							stateChange = state - prevState;
+							break;
+						}
+					}
+					if(!continuePress){
+						pressed = true;
+						break;
+					}
 				}
 			}
 			//execute update start time when
 			if (stateChange == rising) {
 				prevBounceTime = HAL_GetTick();
-				if(!pressed)startTime=HAL_GetTick();
+				//if(!pressed)
+				startTime=HAL_GetTick();
 			}
 
 			//update preview state for feature detect changing
@@ -57,4 +75,3 @@ int readByDebounce(GPIO_TypeDef * gpioX, int pin){
   	//convert milliseconds to seconds and rounding
   	return round(((double)(endTime-startTime))/((double)1000));
 }
-
