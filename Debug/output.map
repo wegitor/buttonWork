@@ -3349,31 +3349,31 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15
                 0x0000047a       0x22 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 OUTPUT(buttonWork.elf elf32-littlearm)
 
-.debug_info     0x00000000     0xb953
+.debug_info     0x00000000     0xb941
  .debug_info    0x00000000     0x1118 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_info    0x00001118     0x175a Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_info    0x00002872      0xf97 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
  .debug_info    0x00003809     0x123a Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
  .debug_info    0x00004a43     0x1f1d Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
- .debug_info    0x00006960      0xba7 Src/buttonTime.o
- .debug_info    0x00007507     0x186d Src/main.o
- .debug_info    0x00008d74     0x142e Src/stm32f4xx_hal_msp.o
- .debug_info    0x0000a1a2      0xa0a Src/stm32f4xx_it.o
- .debug_info    0x0000abac      0xd30 Src/system_stm32f4xx.o
- .debug_info    0x0000b8dc       0x77 startup/startup_stm32f407xx.o
+ .debug_info    0x00006960      0xb95 Src/buttonTime.o
+ .debug_info    0x000074f5     0x186d Src/main.o
+ .debug_info    0x00008d62     0x142e Src/stm32f4xx_hal_msp.o
+ .debug_info    0x0000a190      0xa0a Src/stm32f4xx_it.o
+ .debug_info    0x0000ab9a      0xd30 Src/system_stm32f4xx.o
+ .debug_info    0x0000b8ca       0x77 startup/startup_stm32f407xx.o
 
-.debug_abbrev   0x00000000     0x1b90
+.debug_abbrev   0x00000000     0x1b7c
  .debug_abbrev  0x00000000      0x2f2 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_abbrev  0x000002f2      0x3d4 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_abbrev  0x000006c6      0x2a5 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
  .debug_abbrev  0x0000096b      0x328 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
  .debug_abbrev  0x00000c93      0x342 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
- .debug_abbrev  0x00000fd5      0x26d Src/buttonTime.o
- .debug_abbrev  0x00001242      0x2ed Src/main.o
- .debug_abbrev  0x0000152f      0x252 Src/stm32f4xx_hal_msp.o
- .debug_abbrev  0x00001781      0x1f8 Src/stm32f4xx_it.o
- .debug_abbrev  0x00001979      0x205 Src/system_stm32f4xx.o
- .debug_abbrev  0x00001b7e       0x12 startup/startup_stm32f407xx.o
+ .debug_abbrev  0x00000fd5      0x259 Src/buttonTime.o
+ .debug_abbrev  0x0000122e      0x2ed Src/main.o
+ .debug_abbrev  0x0000151b      0x252 Src/stm32f4xx_hal_msp.o
+ .debug_abbrev  0x0000176d      0x1f8 Src/stm32f4xx_it.o
+ .debug_abbrev  0x00001965      0x205 Src/system_stm32f4xx.o
+ .debug_abbrev  0x00001b6a       0x12 startup/startup_stm32f407xx.o
 
 .debug_loc      0x00000000     0x264f
  .debug_loc     0x00000000       0x69 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
@@ -3410,18 +3410,18 @@ OUTPUT(buttonWork.elf elf32-littlearm)
  .debug_aranges
                 0x00000538       0x28 startup/startup_stm32f407xx.o
 
-.debug_ranges   0x00000000      0x530
+.debug_ranges   0x00000000      0x518
  .debug_ranges  0x00000000       0xb8 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_ranges  0x000000b8       0xf8 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_ranges  0x000001b0       0x48 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
  .debug_ranges  0x000001f8       0x78 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
  .debug_ranges  0x00000270      0x1c0 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
- .debug_ranges  0x00000430       0x28 Src/buttonTime.o
- .debug_ranges  0x00000458       0x30 Src/main.o
- .debug_ranges  0x00000488       0x20 Src/stm32f4xx_hal_msp.o
- .debug_ranges  0x000004a8       0x50 Src/stm32f4xx_it.o
- .debug_ranges  0x000004f8       0x18 Src/system_stm32f4xx.o
- .debug_ranges  0x00000510       0x20 startup/startup_stm32f407xx.o
+ .debug_ranges  0x00000430       0x10 Src/buttonTime.o
+ .debug_ranges  0x00000440       0x30 Src/main.o
+ .debug_ranges  0x00000470       0x20 Src/stm32f4xx_hal_msp.o
+ .debug_ranges  0x00000490       0x50 Src/stm32f4xx_it.o
+ .debug_ranges  0x000004e0       0x18 Src/system_stm32f4xx.o
+ .debug_ranges  0x000004f8       0x20 startup/startup_stm32f407xx.o
 
 .debug_macro    0x00000000    0x1ffc6
  .debug_macro   0x00000000      0x360 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
@@ -3491,20 +3491,20 @@ OUTPUT(buttonWork.elf elf32-littlearm)
  .debug_macro   0x0001f9b6      0x30a Src/stm32f4xx_it.o
  .debug_macro   0x0001fcc0      0x306 Src/system_stm32f4xx.o
 
-.debug_line     0x00000000     0x5e45
+.debug_line     0x00000000     0x5e49
  .debug_line    0x00000000      0x928 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
  .debug_line    0x00000928      0x9a7 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
  .debug_line    0x000012cf      0x91b Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
  .debug_line    0x00001bea      0x9ee Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
  .debug_line    0x000025d8     0x1095 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
- .debug_line    0x0000366d      0x7b9 Src/buttonTime.o
- .debug_line    0x00003e26      0x80d Src/main.o
- .debug_line    0x00004633      0x7c0 Src/stm32f4xx_hal_msp.o
- .debug_line    0x00004df3      0x818 Src/stm32f4xx_it.o
- .debug_line    0x0000560b      0x7bb Src/system_stm32f4xx.o
- .debug_line    0x00005dc6       0x7f startup/startup_stm32f407xx.o
+ .debug_line    0x0000366d      0x7bd Src/buttonTime.o
+ .debug_line    0x00003e2a      0x80d Src/main.o
+ .debug_line    0x00004637      0x7c0 Src/stm32f4xx_hal_msp.o
+ .debug_line    0x00004df7      0x818 Src/stm32f4xx_it.o
+ .debug_line    0x0000560f      0x7bb Src/system_stm32f4xx.o
+ .debug_line    0x00005dca       0x7f startup/startup_stm32f407xx.o
 
-.debug_str      0x00000000    0xbbe49
+.debug_str      0x00000000    0xbbe3f
  .debug_str     0x00000000    0xba8f1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
                               0xbacb9 (size before relaxing)
  .debug_str     0x000ba8f1      0x3ae Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
@@ -3515,15 +3515,15 @@ OUTPUT(buttonWork.elf elf32-littlearm)
                               0xba5f5 (size before relaxing)
  .debug_str     0x000bb29c      0x93e Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
                               0xbaa89 (size before relaxing)
- .debug_str     0x000bbbda       0xce Src/buttonTime.o
-                              0xba196 (size before relaxing)
- .debug_str     0x000bbca8       0x74 Src/main.o
+ .debug_str     0x000bbbda       0xc4 Src/buttonTime.o
+                              0xba18c (size before relaxing)
+ .debug_str     0x000bbc9e       0x74 Src/main.o
                               0xbad5a (size before relaxing)
- .debug_str     0x000bbd1c       0x1b Src/stm32f4xx_hal_msp.o
+ .debug_str     0x000bbd12       0x1b Src/stm32f4xx_hal_msp.o
                               0xbab3a (size before relaxing)
- .debug_str     0x000bbd37       0xb8 Src/stm32f4xx_it.o
+ .debug_str     0x000bbd2d       0xb8 Src/stm32f4xx_it.o
                               0xba120 (size before relaxing)
- .debug_str     0x000bbdef       0x5a Src/system_stm32f4xx.o
+ .debug_str     0x000bbde5       0x5a Src/system_stm32f4xx.o
                               0xba200 (size before relaxing)
 
 .comment        0x00000000       0x7f
