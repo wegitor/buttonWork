@@ -3,7 +3,7 @@
 This project counts seconds of button holding. Project is designed for stm32f407vg. Button reading is debounced.
 
 ## Hardware requirements
-1. USB to uart converter. Use any converter that supports 3.3v TTL. Many converters may work on 3.3v but torance to 5v. As an example may be used cp2102.
+1. USB to uart converter. Use any converter that supports 3.3v TTL. Many converters may work on 3.3v but torance to 5v. As an example may be used cp2102. Connect rx to PB10 and tx to PB11
 2. Board with stm32f407vg MCU (maybe discovery)
 3. ST-Link programmer
 
