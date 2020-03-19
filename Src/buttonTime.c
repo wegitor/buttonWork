@@ -57,10 +57,9 @@ int readByDebounce(GPIO_TypeDef * gpioX, int pin){
 					}
 				}
 			}
-			//execute update start time when
+			//execute update start time when rise again
 			if (stateChange == rising) {
 				prevBounceTime = HAL_GetTick();
-				//if(!pressed)
 				startTime=HAL_GetTick();
 			}
 
