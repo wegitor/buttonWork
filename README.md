@@ -8,7 +8,7 @@ This project counts seconds of button holding. Project is designed for stm32f407
 3. ST-Link programmer
 
 ## Connection
-Connect rx,tx pins of uart converter with PB10,PB11 MCU board pins and don't forget about ground GND to GND
+Connect uart converter pins rx,tx with PB10,PB11 MCU board pins and don't forget about ground (GND to GND)
 ## Software requirements
 1. IDE named "[System workbench for STM32](https://www.openstm32.org/Downloading%2Bthe%2BSystem%2BWorkbench%2Bfor%2BSTM32%2Binstaller)" or atnother eclipse ( than you need for manual toolchain pathes settings )
 2. [ST-link drivers](https://www.st.com/en/development-tools/stsw-link009.html)
